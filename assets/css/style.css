@@ -1,0 +1,243 @@
+/* font link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap");
+
+/*=== global css starts === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+/*=== global css ends === */
+
+/* config start */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* config end */
+
+/* css for header/navbar starts */
+.header .navbar .navbar-toggler-right {
+  background: #ff0000c7;
+}
+
+.header .navbar .navbar-nav .nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: #463c3c;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff0000;
+}
+
+.header .navbar .navbar-nav .nav-item .btn {
+  border: 1px solid #e3244a;
+}
+/* css for header/navbar ends */
+
+
+/* css for banner starts */
+.banner .row .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.banner .row .text h1 {
+  font-size: 45px;
+  font-weight: 300;
+  color: #463c3c;
+}
+/* css for banner ends */
+
+/* css for market-capitalization starts */
+.market-capitalization {
+  background: #f9f9f9;
+}
+
+.market-capitalization .seaction-heading h2 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #050505;
+}
+
+.market-capitalization .seaction-heading h2 span {
+  color: #ff5220;
+}
+
+.market-capitalization .section-body .content {
+  position: relative;
+}
+
+.market-capitalization .section-body .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 70%;
+  width: 1px;
+  background: #e9e8e9;
+}
+
+@media screen and (max-width: 767px) {
+  .market-capitalization .section-body .content::before {
+    display: none;
+  }
+}
+
+.market-capitalization .section-body .content .item {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.market-capitalization .section-body .content .item .text p {
+  color: #050505;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.market-capitalization .section-body .content .note {
+  font-size: 22px;
+  color: #050505;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.market-capitalization .section-bottom p {
+  text-align: center;
+  font-size: 12px;
+  color: #0b0a0a;
+  font-weight: 300;
+}
+/* css for market-capitalization ends */
+
+/* css for why-ventura starts */
+.why-ventura .section-heading h2 {
+  text-align: center;
+  font-size: 48px;
+  color: #463c3c;
+  font-weight: 300;
+}
+
+.why-ventura .section-body .content {
+  position: relative;
+}
+
+.why-ventura .section-body .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 100%;
+  width: 1px;
+  background: #e9e8e9;
+}
+
+@media screen and (max-width: 767px) {
+  .why-ventura .section-body .content::before {
+    display: none;
+  }
+}
+
+.why-ventura .section-body .content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.why-ventura .section-body .content .item .text p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #463c3c;
+  margin-top: 15px;
+}
+
+.why-ventura .bottom-text p {
+  text-align: center;
+  color: #ff0000;
+  font-size: 30px;
+  font-weight: 300;
+}
+/* css for why-ventura ends */
+
+/* css for footer starts */
+.footer {
+  background: #ededed;
+  text-align: center;
+}
+
+.footer a {
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  background: #ff5221;
+  font-size: 20px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  line-height: 0;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+/* css for footer ends */
